@@ -1,0 +1,18 @@
+games_data = [
+	"007 Golden Eye", "Army Men", "Banjo Kazooie", "Banjo Tooie", "Battle Tanx", "Beautiful Katamari", "Blades of Steel", "Bloody Roar: Primal Fury", "Bomber Man 4", "Borderlands 1", "Borderlands 2", "Bubble Bobble",
+	"Burgertime", "Call of Duty: Advanced Warfare", "Call of Duty: Black Ops 1", "Call of Duty: Black Ops 2", "Call of Duty: Black Ops 3", "Call of Duty: Ghosts", "Call of Duty: Modern Warfare 2", "Call of Duty: Modern Warfare 3",
+	"Classic Concentration", "Dead Island", "Demon Souls", "Diablo 3: Ultimate Evil Edition", "Diddy Kong Racing", "Donkey Kong Country 1", "Donkey Kong Country 2", "Donkey Kong Country 3", "Doom", "Double Dragon", "Dr. Mario",
+	"Dungeons and Dragons: Heroes", "Dynasty Warriors 7: Xtreme Legends", "Earthworm Jim", "F Zero GX", "Fifa '07 Soccer", "FIFA 2014", "Forza Motorsport 3", "Fusion Frenzy", "F-Zero", "Gaunlet Legends", "Halo 3", "Halo 4",
+	"Halo Reach", "Halo: Anniversary Edition", "Injustice: Gods Among Us", "Intellivision Lives!", "Jackbox Party Pack", "James Bond 007: Agent Under Fire", "Killer Instinct", "Kirby 64", "Kirby's Air Ride", "Left 4 Dead 1",
+	"Left 4 Dead 2", "Lego Batman", "Lego Star Wars: The Complete Saga", "Madden '07", "Mario Golf: Toadstool Tour", "Mario Kart 64", "Mario Kart 8", "Mario Kart Wii", "Mario Kart: Double Dash", "Mario Party 10", "Mario Party 2",
+	"Mario Party 4", "Mario Party 5", "Mario Party 6", "Mario Party 8", "Mario Power Tennis", "Mario Superstar Baseball", "Mario Tennis", "Mario Tennis", "Marvel Ultimate Alliance", "Marvel vs Capcom 3: Fate of Two Worlds", "Megaman 64",
+	"Metroid Prime", "Metroid Prime 2 Echoes", "Micro Machines", "MLB 2K9", "Mortal Kombat 1", "Mortal Kombat 2", "Mortal Kombat 3", "Mortal Kombat 4", "Mortal Kombat XL", "Naruto Shippudden: Ultimate Ninja Storm 3 Full Burst",
+	"Naruto Shippudden: Ultimate Ninja Storm Generations", "NBA 2K8", "Need for Speed: Underground", "NHL '06", "NHL 07", "NHL 09", "NHL '99", "Ninja Gaiden", "Nintendo Land", "Pacman", "Perfect Dark", "Perfect Dark Zero",
+	"Persona 4 Arena", "Pikmin 3", "Playstation All-Stars Battle Royale", "Pokemon Snap", "Pokemon Stadium 1", "Pokemon Stadium 2", "Pokken Tournament", "Portal 2", "Quiplash", "Rampage: Total Detruction", "Rockband 4",
+	"Rocket League", "Shovel Knight", "Sonic Adventure 2: Battle", "Sonic Heroes", "Sonic Mega Collection", "Sonic Riders", "Sonic's Ultimate Genesis Collection", "Soul Calibur 4", "Soul Calibur Legends", "Sour Calibur 2",
+	"Spy Hunter", "Star Fox 64", "Star Fox: Assault", "Star Wars Episode 1: Racer", "Starwhal", "Street Fighter 2", "Street Fighter 2 Turbo", "Street Fighter 4", "Street Fighter 5", "Super C", "Super Mario 64", "Super Mario Bros 1",
+	"Super Mario Bros 2", "Super Mario Bros 3", "Super Mario Kart", "Super Mario Maker", "Super Mario Strikers", "Super Mario Sunshine", "Super Mario World", "Super Mario/Luigi U", "Super Monkey Ball", "Super Smash Bros Melee",
+	"Super Smash Bros. 64", "Super Smash Bros. Brawl", "Super Smash Bros. WiiU", "Super Street Fighter 2", "Teenage Mutant Ninja Turtles 1", "Teenage Mutant Ninja Turtles 2", "Tetris 1", "Tetris 2", "Tetris Attack",
+	"Tetris Worlds", "The Legend of Zelda: Majora's Mask", "The Legend of Zelda: Ocarina of Time", "Tony Hawk Pro Skater 1", "Tony Hawk Pro Skater 2", "Track & Field 2", "UFC 2009", "Uniracers", "Wario Ware Inc.",
+	"Wave Race", "WCW Vs. NWO World Tour", "Wii Sports", "WrestleMania", "WWF No Mercy", "Yoshi's Wooly World"
+]
