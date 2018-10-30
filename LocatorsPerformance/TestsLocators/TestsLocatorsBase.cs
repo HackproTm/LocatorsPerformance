@@ -1,4 +1,5 @@
 using Hackpro.LocatorsPerformance.RestClient;
+using Hackpro.LocatorsPerformance.RestClient.Commons;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -10,14 +11,19 @@ namespace Hackpro.LocatorsPerformance.TestsLocators
 {
     [ExcludeFromCodeCoverage]
     [TestFixture]
+    [TestFixtureSource(sourceType: typeof(TestFixtureArgs))]
     public class TestsLocatorsBase : IDisposable
     {
         private APISelenium _apiSelenium;
         private HttpResponseMessage _response;
         private string _idSession;
+        private Browsers _browserName;
+        private int _number;
 
-        public TestsLocatorsBase()
+        public TestsLocatorsBase(Browsers browserName, int number)
         {
+            _browserName = browserName;
+            _number = number;
             _disposing = false;
         }
 
@@ -25,8 +31,14 @@ namespace Hackpro.LocatorsPerformance.TestsLocators
         public async Task StartTests(string uri)
         {
             _apiSelenium = new APISelenium(uri);
-            _response = await _apiSelenium.NewSession(null);
+            _response = await _apiSelenium.NewSession(CapabilitiesDto.GetDefaultCapabilities(_browserName));
 
+        }
+
+        [Test]
+        public async Task GetLocator()
+        {
+            _response = await _apiSelenium.DeleteSession(_idSession);
         }
 
         [TearDown]
