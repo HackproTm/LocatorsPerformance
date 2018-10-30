@@ -1,4 +1,4 @@
-using Hackpro.LocatorsPerformance.RestClient.Enums;
+using Hackpro.LocatorsPerformance.RestClient.Commons;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
