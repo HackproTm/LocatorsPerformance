@@ -1,13 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Project Sdk="Microsoft.NET.Sdk">
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <OutputType>Library</OutputType>
     <RootNamespace>Hackpro.LocatorsPerformance</RootNamespace>
     <AssemblyName>Hackpro.LocatorsPerformance</AssemblyName>
+	<RuntimeIdentifiers>win-x64;win7-x64</RuntimeIdentifiers>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.6" />
-    <PackageReference Include="NUnit" Version="3.11.0" />
+    <Reference Include="System" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="Microsoft.CSharp" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Include="RestClient\APIRestClient.cs" />
+	<Compile Include="RestClient\APISelenium.cs" />
+    <Compile Include="RestClient\Commons\Browsers.cs" />
+	<Compile Include="RestClient\Commons\CapabilitiesDto.cs" />
+	<Compile Include="RestClient\Commons\Commands.cs" />
+	<Compile Include="RestClient\Commons\SystemFunctions.cs" />
+	<Compile Include="TestsLocators\TestFixtureArgs.cs" />
+	<Compile Include="TestsLocators\TestsLocatorsBase.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
